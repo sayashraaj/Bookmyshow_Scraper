@@ -3,8 +3,8 @@ from ..items import BookmyshowItem
 
 class spider(scrapy.Spider):
     name='bms'
-    f = open("urls.txt")
-    start_urls = [url.strip() for url in f.readlines()]
+    f = open(/bookmyshow+"urls.txt")
+    start_urls = [urscrl.strip() for url in f.readlines()]
     f.close()
 
     def parse(self,response):
