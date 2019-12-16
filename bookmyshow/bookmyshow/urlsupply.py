@@ -1,5 +1,8 @@
 from datetime import date
-
+import os.path
+current_directory = os.path.dirname(__file__)
+parent_directory = os.path.split(current_directory)[0]
+file=open(parent_directory+"/urls.txt", "a")
 
 today=date.today()
 date= int(today.strftime("%Y%m%d"))
