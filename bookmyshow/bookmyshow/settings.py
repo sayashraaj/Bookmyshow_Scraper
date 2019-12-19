@@ -93,6 +93,7 @@ ROBOTSTXT_OBEY = True
 FEED_FORMAT = "csv"
 FEED_URI = "bookmyshow.csv"
 
+#using scrapy-user-agents
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
