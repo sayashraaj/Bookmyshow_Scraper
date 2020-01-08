@@ -24,7 +24,9 @@ print(content_list) #To test if content_list is giving proper output
 for j in range(0,int(count)):
 
     for i in range(0,4):
-        temp=str(int(today.strftime("%Y%m")))+str(int(today.strftime("%d"))+i);
+        if(int(today.strftime("%d"))+i<10):
+            x='0'+str(int(today.strftime("%d"))+i)
+        temp=str(int(today.strftime("%Y%m")))+x;
 
         url=str(content_list[j])
         print(url[:-9])
