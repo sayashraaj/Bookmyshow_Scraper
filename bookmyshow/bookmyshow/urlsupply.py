@@ -22,7 +22,7 @@ with open(f, 'r') as f:
 print(content_list) #To test if content_list is giving proper output
 
 for j in range(0,int(count)):
-
+# x is the string variable which is altered to add a 0 digit if the int(day)<10
     for i in range(0,4):
         if(int(today.strftime("%d"))+i<10):
             x='0'+str(int(today.strftime("%d"))+i)
@@ -31,6 +31,4 @@ for j in range(0,int(count)):
         url=str(content_list[j])
         print(url[:-9])
         file.write((url[:-9])+(temp)+"\n")
-
-
 file.close()
