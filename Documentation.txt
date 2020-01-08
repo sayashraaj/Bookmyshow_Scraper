@@ -32,21 +32,10 @@ the singular command to set up identical venv to test, develop and run the proje
 
 The project is initialised by urlsupply.py
 urlsupply.py takes in input by utilising python inbuilt function readlines()
-urlsupply takes in system date to append to shortened string variable of url read usign readlines()
-url is shortened by [:-9] to remove the date element of URL
-nested for loops:
-	for cycling through urls read by readlines()
-	for cycling through generating outputs between range specified by developer
 url.txt stores manual input, test data included in repository
 
 url.txt-->urlsupply-->urls.txt-->bookmyshow.py-->items.py-->bookmyshow.csv
 
 bookmyshow.py is the core part of the project: Spider crawling through input pages from urls.txt generated earlier
 Spider crawls webpage in a for loop, storing data as list initialised in items.py
-Spider named 'bms', abbreviation for Bookmyshow, crawls webpages for:
-	name of cinema
-	subregion of cinema
-	timings of the shows available in the specific cinema
-	percentage of empty seats in the cinema
-	date of show
-Spider crawls the webpage under li.list and initiates a for loop with yield inside the loop to obtain the output in a ordered format in the .csv file, in an organised manner.
+Spider named 'bms', abbreviation for Bookmyshow, crawls webpages for 
