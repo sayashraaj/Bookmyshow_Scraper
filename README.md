@@ -1,4 +1,7 @@
 # Bookmyshow_Scraper
+Built with Scrapy (framework): Obtain categorised data from Bookmyshow listing
+Built with python
+
 Bookmyshow scraper
 Before using repository content, initialise venv:<br>
 `pip install -r requirements.txt` <br>
